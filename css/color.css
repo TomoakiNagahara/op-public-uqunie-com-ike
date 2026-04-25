@@ -1,0 +1,52 @@
+
+
+.center {
+	text-align: center;
+}
+
+.base {
+	border: 1px solid rgb(135, 186, 56);
+	color:     white;
+	font-size: 200%;
+	text-align: center;
+	background-color: rgb(135, 186, 56);
+}
+
+.base > p {
+	margin:  0.8em 0;
+	padding: 0;
+	line-height: 1em;
+}
+
+.block_arrow {
+	z-index: -1;
+	height: calc(100vw / 5);
+	width:  calc(100vw / 5);
+	position: relative;
+	bottom: calc((100vw / 5) / 2);
+	display: inline-block;
+	background-color: rgb(135, 186, 56);
+	transform: rotate(45deg);
+}
+
+.background {
+	background-color: rgb(234, 242, 220);
+}
+
+h2 {
+	padding: 0.5em;
+	text-align: center;
+	color: white;
+	background-color: rgb(135, 186, 56);
+}
+
+li {
+	_border: 1px solid black;
+	list-style-type: none;
+	margin: 0.5em 0;
+}
+
+footer {
+	text-align: center;
+	padding: 0.5em;
+}
