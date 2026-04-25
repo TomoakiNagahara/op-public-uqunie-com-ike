@@ -17,64 +17,117 @@ declare(strict_types=1);
  */
 namespace OP;
 
+//	Config
+OP()->Config('app',[
+	'title'     => '池袋カンフークラブ',
+	'copyright' => '(C) 池袋カンフークラブ',
+]);
+
+//	WebPack
+OP()->Unit()->WebPack()->Auto(__DIR__.'/css/color.css');
+
 ?>
 <section>
-	<h1>池袋カンフークラブ<br><small>IKEBUKURO KUNG-FU CLUB</small></h1>
-	<p>
-		強くなりたい。<br>
-		痩せたい。<br>
-		変わりたい。<br><br>
-		その全部に、中国武術。
-	</p>
-	<p>
-		強く、美しく、しなやかに、動ける身体をつくる。<br>
-		池袋で始める、本格カンフー。
+	<div>
+		<h1 class="center">
+			<span style="font-size: calc(100vw / 11);">池袋カンフークラブ</span><br>
+			<span style="font-size: calc(100vw / 20);">IKEBUKURO KUNG-FU CLUB</span>
+		</h1>
+	</div>
+	<div class="center">
+		<div class="base">
+			<p>強くなりたい</p>
+			<p>痩せたい</p>
+			<p>美しくなりたい</p>
+			<p>変わりたい</p>
+		</div>
+		<div class="block_arrow"></div>
+		<p style="font-size: calc(100vw / 11); _border: 1px solid black; position: relative; bottom: 0.5em;">
+			その全部に、中国武術
+		</p>
+	</div>
+	<hr/>
+	<p class="center">
+		強く、美しく、しなやかに、動ける身体をつくる<br>
+		池袋で始める、本格カンフー
 	</p>
 	<hr/>
-	<h2>対象</h2>
-	<ul>
-		<li>初心者歓迎</li>
-		<li>男女OK</li>
-		<li>ダイエット・健康目的歓迎</li>
-		<li>運動不足解消したい方</li>
-		<li>何か新しいことを始めたい方</li>
-	</ul>
-	<hr/>
-	<h2>内容</h2>
-	<p>中国武術をベースにした全身運動。</p>
-	<ul>
-		<li>基礎功</li>
-		<li>柔軟</li>
-		<li>体幹トレーニング</li>
-		<li>型（長拳・劈掛拳・形意拳）</li>
-		<li>軽い対人練習（希望者）</li>
-	</ul>
+	<h2>対象 👉 子供から大人まで</h2>
+	<div style="text-align: center;">
+		<ul style="margin:0; padding:0; _border: 1px solid black; display: inline-block; _text-align: left; ">
+			<li>初心者・女性、歓迎</li>
+			<li>ダイエット・健康目的</li>
+			<li>運動不足を解消したい方</li>
+			<li>何か新しいことを始めたい方</li>
+		</ul>
+	</div>
+	<h2>コンセプト 👉 週1回から始める本格中国武術！</h2>
+	<div class="center">
+		<p>未経験でもOK！楽しく動いて健康に！</p>
+		<p>お子さんの運動能力を向上！大人でも遅くない！</p>
+		<p>経験豊富な指導員があなたを達人に導きます！</p>
+	</div>
+	<h2>内容 👉 中国武術をベースにした全身運動</h2>
+	<div class="center">
+		<h3>準備運動</h3>
+		<ol style="position: relative; right: 2em;">
+			<li>１．柔軟・ストレッチ</li>
+			<li>２．基礎トレーニング</li>
+			<li>３．体幹トレーニング</li>
+		</ol>
+		<h3>套路(型)</h3>
+		<p>
+			入門用（普及型）の簡単な動作から始めて<br/>
+			徐々に難しい動作に挑戦します！
+		</p>
+		<h3>クラス</h3>
+		<p>
+			レベル毎にクラスを分けて練習を行います<br/>
+			クラスによって練習内容は異なります
+		</p>
+		<ul>
+			<li>初心者：套路（型の練習）</li>
+			<li>中級者：対練（約束組手）</li>
+			<li>上級者：散手（自由組手）</li>
+		</ul>
+	</div>
 	<h2>効果</h2>
-	<ul>
-		<li>姿勢改善</li>
-		<li>柔軟性向上</li>
-		<li>体幹強化</li>
-		<li>ダイエット</li>
-		<li>ストレス発散</li>
-	</ul>
+	<div class="center">
+		<ul style="_border:1px solid black; display: inline-block; margin:0; padding: 0;">
+			<li>姿勢改善</li>
+			<li>柔軟性向上</li>
+			<li>体幹強化</li>
+			<li>ダイエット</li>
+			<li>ストレス発散</li>
+		</ul>
+	</div>
 	<h2>料金</h2>
-	<p class="price">1回 2,000円</p>
-	<ul>
-		<li>入会金なし</li>
-		<li>月会費なし</li>
-		<li>都度払い</li>
-	</ul>
+	<div class="center">
+		<ul style="_border:1px solid black; display: inline-block; margin:0; padding: 0;">
+			<li>入会金なし</li>
+			<li>年会費なし</li>
+			<li>月謝なし</li>
+			<li>チケット制（10回券/10000円）</li>
+		</ul>
+	</div>
 	<h2>場所</h2>
-	<p>
-		池袋駅近辺の公共施設<br>
-		（参加者に詳細連絡）
+	<p class="center">
+		豊島区・練馬区の公共施設
 	</p>
 	<h2>参加方法</h2>
-	<p>
-	メールで連絡<br>
-	↓<br>
-	日程調整<br>
-	↓<br>
-	参加
-	</p>
+	<div class="center">
+		<p>
+			LINEで友達申請後、お問い合わせ下さい。
+		</p>
+		<img src="/img/tomosan.jpg" style="width: 30vw; height: 30vw" />
+		<img src="/img/line.jpg" style="width: 30vw;" />
+		<h4>指導員成績</h4>
+		<ul style="_border:1px solid black; display: inline-block; margin:0; padding: 0;">
+			<li>全日本武術太極拳選手権大会 🥇優勝</li>
+			<li>南関東ブロック武術太極拳競技大会 🥇優勝</li>
+			<li>XMA(エクストリーム・マーシャルアーツ)日本３位</li>
+			<li>スポーツチャンバラ世界大会４位</li>
+			<li>スポーツチャンバラ全日本大会３位</li>
+		</ul>
+	</div>
 </section>
