@@ -132,3 +132,10 @@ OP()->Config('app',[
 		</ul>
 	</div>
 </section>
+<?php
+if( OP()->isAdmin() ){
+	D('Not count');
+}else{
+	OP()->Template("asset:/module/counter/save.php");
+}
+?>
