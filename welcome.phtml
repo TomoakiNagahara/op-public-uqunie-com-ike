@@ -133,9 +133,9 @@ OP()->Config('app',[
 	</div>
 </section>
 <?php
-if( OP()->isAdmin() ){
+if(!OP()->isLocalhost() and OP()->isAdmin() ){
 	D('Not count');
 }else{
-	OP()->Template("asset:/module/counter/save.php");
+	OP()->Template("asset:/module/counter/countup.php");
 }
 ?>
