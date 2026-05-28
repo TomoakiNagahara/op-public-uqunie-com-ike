@@ -7,3 +7,4 @@ if( !OP()->isAdmin() ){
 
 //	...
 OP()->Template('asset:/module/counter/view.php');
+OP()->Template('asset:/module/counter/calendar.php');
